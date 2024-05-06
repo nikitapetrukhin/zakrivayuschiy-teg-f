@@ -9,6 +9,7 @@
 }
 
 body {
+  max-inline-size: 1440px;
   margin: 0;
 }
 

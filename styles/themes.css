@@ -4,3 +4,80 @@
 ✦ theme-light — класс светлой темы
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
+
+:root.theme-light {
+  --main-color: #000;
+  --main-bg-color: #fff;
+  --title-font-weight: 700px;
+  --text-font-weight: 400px;
+  --text-stroke-label: #fff;
+  --changing-color: #fff;
+  --heart-contur-color: #000;
+  --main-bg-image: repeating-linear-gradient(
+      to right,
+      #d3d3d3,
+      #d3d3d3 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    repeating-linear-gradient(
+      to bottom,
+      #d3d3d3,
+      #d3d3d3 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    linear-gradient(#e7e7e7 0 0.01%, #1a1a1a);
+}
+
+:root.theme-dark {
+  --main-color: #00cc14;
+  --main-bg-color: #000;
+  --title-font-weight: 785px;
+  --text-font-weight: 465px;
+  --text-stroke-label: #000;
+  --changing-color: #00cc14;
+  --heart-contur-color: #00cc14;
+  --main-bg-image: repeating-linear-gradient(
+      to right,
+      #000,
+      #000 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    repeating-linear-gradient(
+      to bottom,
+      #000,
+      #000 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    linear-gradient(#007f0c 0 0.01%, #004306);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --main-color: #00cc14;
+    --main-bg-color: #000;
+    --title-font-weight: 785px;
+    --text-font-weight: 465px;
+    --text-stroke-label: #000;
+    --changing-color: #00cc14;
+    --heart-contur-color: #00cc14;
+    --main-bg-image: repeating-linear-gradient(
+        to right,
+        #000,
+        #000 2px,
+        transparent 2px,
+        transparent 4px
+      ),
+      repeating-linear-gradient(
+        to bottom,
+        #000,
+        #000 2px,
+        transparent 2px,
+        transparent 4px
+      ),
+      linear-gradient(#007f0c 0 0.01%, #004306);
+  }
+}
