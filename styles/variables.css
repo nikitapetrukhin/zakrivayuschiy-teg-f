@@ -3,8 +3,8 @@
 :root {
   --main-color: #000;
   --main-bg-color: #fff;
-  --title-font-weight: 700px;
-  --text-font-weight: 400px;
+  --title-font-weight: 700;
+  --text-font-weight: 400;
   --text-stroke-label: #fff;
   --changing-color: #fff;
   --heart-contur-color: #000;
@@ -24,8 +24,8 @@
       transparent 4px
     ),
     linear-gradient(#e7e7e7 0 0.01%, #1a1a1a);
-  --main-font: 'Inter-Variable', 'Arial', 'sans-serif';
-  --accent-font: 'PressStart2P', 'Arial', 'sans-serif';
+  --main-font: 'Inter-Variable', 'Arial', sans-serif;
+  --accent-font: 'PressStart2P', 'fantasy', sans-serif;
   --breakpoint-desktop: 1200px;
   --breakpoint-desktop-simulation: (100vw - var(--breakpoint-desktop, 1200px));
   --inline-size: 100%;
