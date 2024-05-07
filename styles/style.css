@@ -78,8 +78,11 @@
   gap: 12px;
 }
 
-.theme-menu__button {
+.theme-menu__item {
   position: relative;
+}
+
+.theme-menu__button {
   background-color: transparent;
   border: none;
   text-transform: uppercase;
@@ -153,10 +156,10 @@
 
 .cards-list__text {
   display: grid;
-  gap: 25px;
-  padding: 25px 25px 21px 25px;
+  gap: 29px;
+  padding: 25px 25px 26px 25px;
   font-size: 18px;
-  line-height: 1.2;
+  line-height: 1.16;
   font-variation-settings: 'wght' var(--text-font-weight);
 }
 
@@ -253,7 +256,7 @@ dialog:is([open]) {
   background-color: var(--main-bg-color);
   inline-size: clamp(341px, var(--breakpoint-desktop-simulation), 353px);
   padding-block: 30px;
-  padding-inline: clamp(40px, var(--breakpoint-desktop-simulation), 30px);
+  /* padding-inline: clamp(40px, var(--breakpoint-desktop-simulation), 30px); */
   font-family: var(--accent-font);
   text-transform: uppercase;
 }
@@ -271,10 +274,12 @@ dialog .floppy-disk {
 }
 
 dialog button {
+  /* inline-size: clamp(257px, var(--breakpoint-desktop-simulation), 293px); */
+  block-size: 38px;
   grid-column-start: span 2;
   line-height: 0.9;
-  padding-block: 13px;
   cursor: pointer;
+  padding: 0;
 }
 
 .filter-mix {
@@ -305,7 +310,7 @@ dialog button {
   filter: opacity(0.3) contrast(1.3);
 }
 
-.ok-button {
+.dialog-button {
   text-transform: uppercase;
 }
 
@@ -436,7 +441,7 @@ dialog button {
 @media (width >= 1200px) {
   .save-button {
     flex-direction: row;
-    padding: 19px;
+    padding: 16px 20px;
   }
 
   .floppy-disk {

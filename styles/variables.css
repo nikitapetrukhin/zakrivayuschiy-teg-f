@@ -25,7 +25,7 @@
     ),
     linear-gradient(#e7e7e7 0 0.01%, #1a1a1a);
   --main-font: 'Inter-Variable', 'Arial', sans-serif;
-  --accent-font: 'PressStart2P', 'fantasy', sans-serif;
+  --accent-font: 'PressStart2P', fantasy, sans-serif;
   --breakpoint-desktop: 1200px;
   --breakpoint-desktop-simulation: (100vw - var(--breakpoint-desktop, 1200px));
   --inline-size: 100%;
