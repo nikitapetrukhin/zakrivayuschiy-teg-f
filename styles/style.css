@@ -255,8 +255,7 @@ dialog:is([open]) {
   color: var(--main-color);
   background-color: var(--main-bg-color);
   inline-size: clamp(341px, var(--breakpoint-desktop-simulation), 353px);
-  padding-block: 30px;
-  /* padding-inline: clamp(40px, var(--breakpoint-desktop-simulation), 30px); */
+  padding: 30px 40px;
   font-family: var(--accent-font);
   text-transform: uppercase;
 }
@@ -274,7 +273,6 @@ dialog .floppy-disk {
 }
 
 dialog button {
-  /* inline-size: clamp(257px, var(--breakpoint-desktop-simulation), 293px); */
   block-size: 38px;
   grid-column-start: span 2;
   line-height: 0.9;
@@ -450,5 +448,9 @@ dialog button {
 
   .cards-list__text {
     padding: 30px 25px 25px 25px;
+  }
+
+  dialog:is([open]) {
+    padding: 30px 30px;
   }
 }
